@@ -1,0 +1,17 @@
+{
+  "version": "4.0.0",
+  "deployment": "not-deployed",
+  "runtime_sha256": {
+    "index.html": "c78741561a927464f494597d795f5bfa1d19416ac05a6dfe68c5075e542e7d77",
+    "app.js": "1ed0f64a23406e205e81db9cf66eee8ad703c78a4cb909172c3fb7081013b3f4",
+    "core.js": "06e14236f1be0223ef248beb80fd7e6b2c9c7b2636a730faebae6e1890cabf0c",
+    "style.css": "dfdd02c823a0bd2929a825729db23c37e81cadbea276e7913c2c6d3f8360aa95",
+    "sw.js": "e810b193866c447680f1b2a6cf0f2cd460ae89154cc2f7bede8b65495b16d671",
+    "manifest.webmanifest": "58b7f86ef41e51cca4a7abdb0d04f8e84e7461928b9347bb9a1af9479f00e2e5",
+    "icon.svg": "1b08dac2fc7ca6e5f5c662aa6a93a00a44db0c7d8d7a46fb660218e692240e76",
+    "icon-192.png": "3340f62da28c239d3fda75253105c2c73468d54cecc0014813a0a030398fc825",
+    "icon-512.png": "0f5b3f7bcd498a5892caeb0c7701e2a812fb289df796e9f6e24bd9c3312f51a1",
+    "apple-touch-icon.png": "b24829b05ad6debf4bc6a5173796efa3ca11c37ecfcb7571a9fea3944b66a037",
+    ".nojekyll": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  }
+}
