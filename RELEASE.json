@@ -1,12 +1,12 @@
 {
-  "version": "4.0.0",
+  "version": "4.0.1",
   "deployment": "not-deployed",
   "runtime_sha256": {
-    "index.html": "c78741561a927464f494597d795f5bfa1d19416ac05a6dfe68c5075e542e7d77",
-    "app.js": "1ed0f64a23406e205e81db9cf66eee8ad703c78a4cb909172c3fb7081013b3f4",
+    "index.html": "6cc998811183c85affb038bca826072ce9e02a43cc873b43585bf159c55e85b7",
+    "app.js": "338e8c796dd6437ab312057eb07c48664cddfe03399f426cab3ca9569f9e888a",
     "core.js": "06e14236f1be0223ef248beb80fd7e6b2c9c7b2636a730faebae6e1890cabf0c",
-    "style.css": "dfdd02c823a0bd2929a825729db23c37e81cadbea276e7913c2c6d3f8360aa95",
-    "sw.js": "e810b193866c447680f1b2a6cf0f2cd460ae89154cc2f7bede8b65495b16d671",
+    "style.css": "2bcb36b502259af1f7916f919a78b56c1ab127cbd8255b23e2e48fc6a28ada57",
+    "sw.js": "d0ffb798dae6df86ab06fd02d16e7b287272f7e4d4fdff1f62fca758476c55c5",
     "manifest.webmanifest": "58b7f86ef41e51cca4a7abdb0d04f8e84e7461928b9347bb9a1af9479f00e2e5",
     "icon.svg": "1b08dac2fc7ca6e5f5c662aa6a93a00a44db0c7d8d7a46fb660218e692240e76",
     "icon-192.png": "3340f62da28c239d3fda75253105c2c73468d54cecc0014813a0a030398fc825",

@@ -1,5 +1,5 @@
-const CACHE='nobody-life-os-v4.0.0';
-const FILES=['./','./index.html','./style.css?v=4.0.0','./app.js?v=4.0.0','./core.js?v=4.0.0','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png','./apple-touch-icon.png'];
+const CACHE='nobody-life-os-v4.0.1';
+const FILES=['./','./index.html','./style.css?v=4.0.1','./app.js?v=4.0.1','./core.js?v=4.0.1','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png','./apple-touch-icon.png'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(FILES.map(url=>new Request(url,{cache:'reload'})))).then(async()=>{const keys=await caches.keys();if(keys.some(k=>/^nobody-life-os-v[123]$/.test(k)))await self.skipWaiting()})));
 self.addEventListener('message',event=>{if(event.data==='ACTIVATE')self.skipWaiting()});
 self.addEventListener('activate',event=>event.waitUntil((async()=>{const keys=await caches.keys(),legacy=keys.some(k=>/^nobody-life-os-v[123]$/.test(k));await Promise.all(keys.filter(k=>k.startsWith('nobody-life-os-')&&k!==CACHE).map(k=>caches.delete(k)));await self.clients.claim();if(legacy){const clients=await self.clients.matchAll({type:'window'});await Promise.all(clients.map(client=>client.navigate(client.url)))}})()));

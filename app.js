@@ -1,4 +1,7 @@
-import * as C from './core.js?v=4.0.0';
+import * as C from './core.js?v=4.0.1';
+// Keep the phone interface at its intended scale while allowing normal scrolling.
+document.addEventListener('gesturestart',e=>{if(matchMedia('(pointer: coarse)').matches)e.preventDefault()},{passive:false});
+document.addEventListener('touchmove',e=>{if(e.touches.length>1)e.preventDefault()},{passive:false});
 const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let state,page='week',selected=C.day(),week=C.monday(),view='day',range='month',filter='',query='',fatal=false;
 try{state=C.boot(localStorage);C.ensureWeek(state,week);C.persist(localStorage,state)}catch(e){fatal=true;$('main').innerHTML=`<div class="card"><h1>数据需要保护</h1><p>无法安全读取本机数据，已停止写入。</p><p>${esc(e.message)}</p><button id="rescue">下载原始存储备份</button></div>`;$('rescue').onclick=()=>download('life-os-rescue.json',JSON.stringify(Object.fromEntries(Object.keys(localStorage).filter(k=>k.startsWith('nobody-life-os')).map(k=>[k,localStorage.getItem(k)]))), 'application/json')}
